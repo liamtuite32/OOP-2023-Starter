@@ -50,6 +50,12 @@ public class DANI extends PApplet {
 	public void keyPressed() {
 
 	}
+	public void printModel(){
+		 // Print out the contents of the file
+		 System.out.println();
+		 System.out.println();
+		 System.out.println();
+	}
 
 	float off = 0;
 
