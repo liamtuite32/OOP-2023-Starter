@@ -6,12 +6,33 @@ import processing.core.PApplet;
 
 public class DANI extends PApplet {
 
-	
-
 	public void settings() {
 		size(1000, 1000);
 		//fullScreen(SPAN);
 	}
+
+	// array list 
+	public ArrayList<Follow> follows = new ArrayList<Follow>();
+	
+	// load file
+	public void loadFile()
+    {
+		String[] s = loadStrings("small.txt");
+
+		for (int i = 0; i < s.length; i++) {
+			s[i] = s[i].replaceAll("[^\\w\\s]",""); // Remove punction characters
+			s[i] = s[i].toLowerCase(); // Convert a string to lower case 
+
+			Follow f = new Follow(s[i], i);
+			follows.add(f);
+			println(s[i]);
+		}
+
+    }
+    public void findWord(String str) {
+
+
+    }
 
     String[] sonnet;
 
@@ -22,7 +43,7 @@ public class DANI extends PApplet {
 
 	public void setup() {
 		colorMode(HSB);
-
+		loadFile();
        
 	}
 

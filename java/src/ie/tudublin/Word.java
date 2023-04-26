@@ -3,26 +3,31 @@ package ie.tudublin;
 import java.util.ArrayList;
 
 public class Word {
+
+    // array list 
+    public ArrayList<Follow> fields = new ArrayList<Follow>();
+
     private String word;
-    private ArrayList<Follow> follows;
-    public Word(String word) {
-        this.word = word;
-        this.follows = new ArrayList<>();
-    }
+    // follows class 
+
     public String getWord() {
         return word;
     }
-    public ArrayList<Follow> getFollows() {
-        return follows;
+
+    // constructor methods
+    public void setWord(String word) {
+        this.word = word;
     }
-    public void addFollow(String word, int count) {
-        follows.add(new Follow(word, count));
+
+    // find follow 
+    public void findFollow(String str) {
+
     }
+    
+
+    // string
     public String toString() {
-        String word = "";
-        for(Follow a : follows) {
-            word += "," + a.toString();
-        }
-        return word;
-      }
+        return "Word ="  + " follows = " + word;
+    }
+    
 }
