@@ -17,7 +17,7 @@ public class DANI extends PApplet {
 	// load file
 	public void loadFile()
     {
-		String[] s = loadStrings("small.txt");
+		String[] s = loadStrings("small.txt");// Load a text file into a String array
 
 		for (int i = 0; i < s.length; i++) {
 			s[i] = s[i].replaceAll("[^\\w\\s]",""); // Remove punction characters
