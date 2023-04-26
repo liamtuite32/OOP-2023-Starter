@@ -1,5 +1,5 @@
 package ie.tudublin;
-    
+
     public class Follow {
     private String word;
     private int count;
@@ -9,20 +9,20 @@ package ie.tudublin;
         this.count = count;
     }
     // Accessor
-    public int getCount() {
-        return count;
-    }
-    // Mutator
-    public void setCount(int count) {
-        this.count = count;
-    }
-    // Accessor
     public String getWord() {
         return word;
     }
     // Mutator
     public void setWord(String word) {
         this.word = word;
+    }
+    // Accessor
+    public int getCount() {
+        return count;
+    }
+    // Mutator
+    public void setCount(int count) {
+        this.count = count;
     }
     // Overriding the toString method
     @Override
